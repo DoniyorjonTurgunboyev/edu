@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Edu</string>
+    <string name="large_title">Xush kelibsiz!</string>
+    <string name="a_caption">Akkauntga kirish</string>
+    <string name="siz_kiritga">Siz kiritgan telefon raqamingizga sms ko`rinishida \n6 raqamdan iborat bo`lgan tasdiqlash kodi yuboriladi.</string>
+    <string name="men_ilovani">Men ilovaning <a href="https://docs.google.com/document/d/1TrYxUtlmni1RYzFGEATxB3kJn8JJFkburcHd5DPVDfQ/edit">Maxfiylik siyosati</a> va <a href="https://docs.google.com/document/d/1TrYxUtlmni1RYzFGEATxB3kJn8JJFkburcHd5DPVDfQ/edit">Ommaviy oferta</a> qoidalariga rozilik bildiraman.</string>
+    <string name="text">Kirish</string>
+    <string name="yangi_hisob">Yangi hisob yaratish</string>
+    <string name="tasdiqlash_">Tasdiqlash kodini kiriting</string>
+    <string name="telefon_raq">telefon raqamingizga yuborilgan smsdagi 6 raqamli kodni kiriting</string>
+    <string name="qayta">Kodni qayta yuborish:\t</string>
+    <string name="download">Rasm yuklash</string>
+    <string name="telegram">Telegramingiz (masalan: @smartboy)</string>
+    <string name="saqlash">Saqlash</string>
+    <string name="smartarena">\@smartarena</string>
+    <string name="yaratish">Yaratish</string>
+    <string name="xarajatlar_">Xarajatlar taqsimlanadigan kvartira aʼzolari:</string>
+    <string name="tanlangan_3">Tanlangan 3 ta kvartira aʼzosining har biriga: 0.00 UZS dan</string>
 </resources>
