@@ -3,7 +3,7 @@ package uz.smartarena.edu.model
 data class User(
     var name: String? = "",
     var surname: String? = "",
+    var birthday: String? = "",
     var number: String? = "",
-    var token: String? = "",
-    var uid: String? = ""
+    var address: String? = "",
 ) : java.io.Serializable
