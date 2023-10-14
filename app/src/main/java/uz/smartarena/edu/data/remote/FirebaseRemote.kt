@@ -12,6 +12,7 @@ import uz.smartarena.edu.model.User
 class FirebaseRemote {
     private val database = FirebaseDatabase.getInstance()
     private val users = database.getReference("users")
+    private val classes = database.getReference("sinflar")
     val auth = Firebase.auth
     private val storage = EncryptedLocalStorage.getInstance()
 
@@ -29,7 +30,7 @@ class FirebaseRemote {
         map["name"] = user.name!!
         map["surname"] = user.surname!!
         map["number"] = user.number!!
-        users.child(auth.uid?:"notAuthenticate").setValue(map).addOnSuccessListener {
+        users.child(auth.uid ?: "notAuthenticate").setValue(map).addOnSuccessListener {
             callback.invoke()
         }
     }
@@ -61,5 +62,21 @@ class FirebaseRemote {
                 callback1.invoke(false)
             }
         })
+    }
+
+    fun getAcceptanceByTheme(uid: String, className: String, themeName: String, callback: (Int, Double) -> Unit) {
+        var acceptanceCount: Int
+        users.child(uid).child("acceptance").child(className).child(themeName).get().addOnSuccessListener { snapshot ->
+            acceptanceCount = snapshot.childrenCount.toInt()
+            var sum = 0.0
+            snapshot.children.forEach { snapshot ->
+                sum += snapshot.value.toString().toInt()
+            }
+            callback.invoke(acceptanceCount, if (acceptanceCount == 0) 0.0 else sum / acceptanceCount)
+        }.addOnFailureListener { callback.invoke(0, 0.0) }
+    }
+
+    fun getClasses(callback: () -> Unit) {
+
     }
 }
