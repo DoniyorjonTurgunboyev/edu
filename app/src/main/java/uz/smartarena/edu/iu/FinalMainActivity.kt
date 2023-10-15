@@ -14,14 +14,9 @@ class FinalMainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.statusBarColor = resources.getColor(R.color.green, theme)
-        window.navigationBarColor = resources.getColor(R.color.green, theme)
+        window.statusBarColor = resources.getColor(R.color.main, theme)
+        window.navigationBarColor = resources.getColor(R.color.main, theme)
         binding = ActivityFinalMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val navView: BottomNavigationView = binding.navView
-
-        val navController = findNavController(R.id.nav_host_fragment_activity_final_main)
-        navView.setupWithNavController(navController)
     }
 }

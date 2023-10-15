@@ -2,7 +2,8 @@ buildscript {
     dependencies {
         classpath("com.google.gms:google-services:4.4.0")
         classpath("com.android.tools.build:gradle:3.4.0")
-
+        val navVersion = "2.7.4"
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$navVersion")
     }
 }
 // Top-level build file where you can add configuration options common to all sub-projects/modules.

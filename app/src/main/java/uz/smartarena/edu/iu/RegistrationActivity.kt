@@ -37,8 +37,8 @@ class RegistrationActivity : AppCompatActivity(), SlideDatePickerDialogCallback 
         super.onCreate(savedInstanceState)
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        window.statusBarColor = resources.getColor(R.color.green)
-        window.navigationBarColor = resources.getColor(R.color.green)
+        window.statusBarColor = resources.getColor(R.color.main)
+        window.navigationBarColor = resources.getColor(R.color.main)
         clickLocations()
         binding.number.setText(storage.numberF)
         val c = Calendar.getInstance()
@@ -92,7 +92,7 @@ class RegistrationActivity : AppCompatActivity(), SlideDatePickerDialogCallback 
         builder.setStartDate(startDate)
         builder.setPreselectedDate(selectedDate)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            builder.setThemeColor(getColor(R.color.green))
+            builder.setThemeColor(getColor(R.color.main))
         }
         val dialog: SlideDatePickerDialog = builder.build()
         dialog.show(supportFragmentManager, "Dialog")

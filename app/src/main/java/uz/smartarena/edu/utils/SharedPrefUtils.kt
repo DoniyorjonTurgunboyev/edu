@@ -23,6 +23,8 @@ fun <T> SharedPreferences.get(key: String, defValue: T): T {
         is Int -> getInt(key, defValue)
         is Boolean -> getBoolean(key, defValue)
         is Long -> getLong(key, defValue)
+        is DoubleArray -> get(key, defValue)
+        is IntArray -> get(key, defValue)
         else -> throw ClassCastException()
     } as T
 }

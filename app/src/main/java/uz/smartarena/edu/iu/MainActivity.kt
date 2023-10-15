@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        window.statusBarColor = resources.getColor(R.color.green)
-        window.navigationBarColor = resources.getColor(R.color.green)
+        window.statusBarColor = resources.getColor(R.color.main)
+        window.navigationBarColor = resources.getColor(R.color.main)
         binding.number.requestFocus(6)
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE)
         binding.enter.setOnClickListener {

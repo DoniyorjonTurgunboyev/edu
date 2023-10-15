@@ -230,7 +230,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="00:00"
-        android:textColor="@color/green"
+        android:textColor="@color/main"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

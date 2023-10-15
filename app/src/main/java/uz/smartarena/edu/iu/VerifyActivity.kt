@@ -41,8 +41,8 @@ class VerifyActivity : AppCompatActivity() {
         binding = ActivityVerifyBinding.inflate(layoutInflater)
         setContentView(binding.root)
         number = storage.number
-        window.statusBarColor = resources.getColor(R.color.green)
-        window.navigationBarColor = resources.getColor(R.color.green)
+        window.statusBarColor = resources.getColor(R.color.main)
+        window.navigationBarColor = resources.getColor(R.color.main)
         numberF = storage.numberF
 
         sendVerificationCode(number)
@@ -137,13 +137,13 @@ class VerifyActivity : AppCompatActivity() {
             override fun onFinish() {
                 binding.resend.apply {
                     isClickable = true
-                    setTextColor(resources.getColor(R.color.green))
+                    setTextColor(resources.getColor(R.color.main))
                 }
                 binding.count.setTextColor(resources.getColor(R.color.seriy))
             }
         }
         countDownTimer.start()
-        binding.count.setTextColor(resources.getColor(R.color.green))
+        binding.count.setTextColor(resources.getColor(R.color.main))
     }
 
     private fun clickListeners() {
@@ -155,7 +155,7 @@ class VerifyActivity : AppCompatActivity() {
                 setTextColor(resources.getColor(R.color.seriy))
                 sendVerificationCode(number)
                 countDownTimer.start()
-                binding.count.setTextColor(resources.getColor(R.color.green))
+                binding.count.setTextColor(resources.getColor(R.color.main))
             }
         }
     }

@@ -14,8 +14,8 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        window.statusBarColor = resources.getColor(R.color.green,theme)
-        window.navigationBarColor = resources.getColor(R.color.green,theme)
+        window.statusBarColor = resources.getColor(R.color.main,theme)
+        window.navigationBarColor = resources.getColor(R.color.main,theme)
         if (storage.uid == "") {
             openLogin()
         } else {

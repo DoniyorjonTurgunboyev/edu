@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="uz.smartarena.edu.iu.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_themeFragment"
+            app:destination="@id/themeFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +26,18 @@
         android:name="uz.smartarena.edu.iu.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="uz.smartarena.edu.iu.ThemeFragment"
+        android:label="fragment_themes"
+        tools:layout="@layout/fragment_themes" >
+        <action
+            android:id="@+id/action_themeFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="uz.smartarena.edu.iu.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson" />
 </navigation>

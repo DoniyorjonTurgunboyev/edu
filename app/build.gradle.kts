@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -51,6 +52,7 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.3")
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0")
 
     // Add the dependencies for the App Check libraries
     // When using the BoM, you don't specify versions in Firebase library dependencies

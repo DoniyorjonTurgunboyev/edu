@@ -18,6 +18,7 @@ class EncryptedLocalStorage private constructor() {
         fun getInstance() = instance
     }
 
+
     var uid: String
         get() = sharedPref.get("uid", "")
         set(value) = sharedPref.save("uid", value)
@@ -40,4 +41,32 @@ class EncryptedLocalStorage private constructor() {
     var token: String
         get() = sharedPref.get("token", "")
         set(value) = sharedPref.save("token", value)
+
+    var algebra: Double
+        get() = sharedPref.get("algebra", 0.0)
+        set(value) = sharedPref.save("algebra", value)
+
+    var bir: Double
+        get() = sharedPref.get("bir", 0.0)
+        set(value) = sharedPref.save("bir", value)
+
+    var ikki: Double
+        get() = sharedPref.get("ikki", 0.0)
+        set(value) = sharedPref.save("ikki", value)
+
+    var uch: Double
+        get() = sharedPref.get("uch", 0.0)
+        set(value) = sharedPref.save("uch", value)
+
+    var tort: Double
+        get() = sharedPref.get("tort", 0.0)
+        set(value) = sharedPref.save("tort", value)
+
+    var besh: Double
+        get() = sharedPref.get("besh", 0.0)
+        set(value) = sharedPref.save("besh", value)
+
+    var current: Int
+        get() = sharedPref.get("current", 1)
+        set(value) = sharedPref.save("current", value)
 }

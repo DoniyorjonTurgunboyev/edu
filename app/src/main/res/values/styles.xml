@@ -71,8 +71,8 @@
     </style>
 
     <style name="Theme.App" parent="Theme.MaterialComponents">
-        <item name="colorPrimary">@color/green</item>
-        <item name="colorOnPrimary">@color/green</item>
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorOnPrimary">@color/main</item>
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
     </style>
@@ -86,7 +86,7 @@
     </style>
 
     <style name="ThemeOverlay.App.DatePicker" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
-        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimary">@color/main</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
